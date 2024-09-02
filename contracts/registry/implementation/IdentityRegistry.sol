@@ -71,7 +71,7 @@ import "../interface/IIdentityRegistry.sol";
 import "../../roles/AgentRoleUpgradeable.sol";
 import "../interface/IIdentityRegistryStorage.sol";
 import "../storage/IRStorage.sol";
-
+import "hardhat/console.sol";
 
 contract IdentityRegistry is IIdentityRegistry, AgentRoleUpgradeable, IRStorage {
 

@@ -1,4 +1,5 @@
-# T-REX : Token for Regulated EXchanges
+
+# En test/fixtures/deployPropio.mjs esta el inicio del deploy del token terex 
 
 ![GitHub](https://img.shields.io/github/license/TokenySolutions/T-REX?color=green) 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/TokenySolutions/T-REX)

@@ -67,6 +67,7 @@ import "./IToken.sol";
 import "@onchain-id/solidity/contracts/interface/IIdentity.sol";
 import "./TokenStorage.sol";
 import "../roles/AgentRoleUpgradeable.sol";
+import "hardhat/console.sol";
 
 contract Token is IToken, AgentRoleUpgradeable, TokenStorage {
 
@@ -301,6 +302,7 @@ contract Token is IToken, AgentRoleUpgradeable, TokenStorage {
     ) external override onlyAgent returns (bool) {
         require(balanceOf(_lostWallet) != 0, "no tokens to recover");
         IIdentity _onchainID = IIdentity(_investorOnchainID);
+        console.log("a");
         bytes32 _key = keccak256(abi.encode(_newWallet));
         if (_onchainID.keyHasPurpose(_key, 1)) {
             uint256 investorTokens = balanceOf(_lostWallet);

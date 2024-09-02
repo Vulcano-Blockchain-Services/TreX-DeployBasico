@@ -67,7 +67,7 @@ import "@onchain-id/solidity/contracts/interface/IIdentity.sol";
 import "../../roles/AgentRoleUpgradeable.sol";
 import "../interface/IIdentityRegistryStorage.sol";
 import "../storage/IRSStorage.sol";
-
+import "hardhat/console.sol";
 contract IdentityRegistryStorage is IIdentityRegistryStorage, AgentRoleUpgradeable, IRSStorage {
 
     function init() external initializer {
